@@ -58,8 +58,16 @@ body {
 
 .section-title {
     font-size: var(--section-title-size);
+    text-align: center;
 }
 
-.profile {
+.about {
     font-size: var(--text-size);
+}
+
+.about-container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
