@@ -1,11 +1,15 @@
 :root {
     --body-bgcolor: #404040;
+    --main-font-color: #ffffff;
+    --main-title-size: 7vh;
+    --section-title-size: 4vh;
+    --text-size: 3vh;
 }
 
 body {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Space Mono', monospace;
     background-color: var(--body-bgcolor);
-    color: #ffffff;
+    color: var(--main-font-color);
 }
 
 .nav {
@@ -28,7 +32,7 @@ body {
 }
 
 .nav-link {
-    color: var(--body-bgcolor);
+    color: #000000;
     text-align: center;
     flex-grow: 1;
     font-size: 2.5vh;
@@ -46,4 +50,16 @@ body {
 .main-title {
     font-size: 6vh;
     margin-bottom: 0;
+}
+
+.strapline {
+    font-size: var(--text-size);
+}
+
+.section-title {
+    font-size: var(--section-title-size);
+}
+
+.profile {
+    font-size: var(--text-size);
 }
