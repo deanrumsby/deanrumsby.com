@@ -70,4 +70,47 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 0 20%;
+}
+
+.html {
+    grid-area: html;
+}
+
+.css {
+    grid-area: css;
+}
+
+.js {
+    grid-area: js;
+}
+
+.python {
+    grid-area: python;
+}
+
+.git {
+    grid-area: git;
+}
+
+.profile {
+    height: fit-content;
+}
+
+.tech-list {
+    margin: 1em auto;
+    padding-left: 0;
+    aspect-ratio: 1 / 1;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "html . css"
+    ". js ."
+    "python . git";
+}
+
+.tech-list li img{
+    width: 100%;
 }
