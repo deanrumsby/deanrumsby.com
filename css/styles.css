@@ -1,0 +1,24 @@
+
+
+.nav {
+    position: fixed;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    list-style: none;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
