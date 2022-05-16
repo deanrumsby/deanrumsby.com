@@ -114,3 +114,28 @@ body {
 .tech-list li img{
     width: 100%;
 }
+
+.connect4 {
+    grid-area: connect4;
+    object-fit: contain;
+}
+
+.projects-list {
+    margin: auto;
+    display: grid;
+    width: 60%;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 0;
+    list-style-type: none;
+    grid-template-areas: ". connect4 .";
+}
+
+.projects-list li img {
+    width: 100%;
+    border-radius: 3%;
+    outline: 2px solid black;
+}
+
+.connect4 img {
+    aspect-ratio: 1 / 1;
+}
