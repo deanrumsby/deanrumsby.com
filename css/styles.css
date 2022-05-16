@@ -139,3 +139,17 @@ body {
 .connect4 img {
     aspect-ratio: 1 / 1;
 }
+
+.contacts-list {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 15vh;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.contacts-list li img {
+    height: 100%;
+}
