@@ -12,6 +12,10 @@ body {
     color: var(--main-font-color);
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav {
     position: fixed;
     height: 7vh;
