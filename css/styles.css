@@ -150,13 +150,13 @@ a, a:active {
     grid-template-areas: ". connect4 .";
 }
 
-.projects-list li img {
+.project-img {
     width: 100%;
     border-radius: 3%;
     outline: 2px solid black;
 }
 
-.projects-list li img:hover {
+.project-img:hover {
     opacity: 0.3;
 }
 
