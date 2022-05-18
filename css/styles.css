@@ -24,7 +24,7 @@ a, a:active {
     left: 0;
     width: 100%;
     background-color: #f0f0f0;
-    z-index: 1;
+    z-index: 10;
 }
 
 .nav-links {
@@ -89,6 +89,10 @@ a, a:active {
     gap: 0 20%;
 }
 
+.tech-item {
+    position: relative;
+}
+
 .html {
     grid-area: html;
 }
@@ -127,12 +131,26 @@ a, a:active {
     "python . git";
 }
 
+.tech-name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 100;
+}
+
 .tech-img{
     width: 100%;
 }
 
-.tech-img:hover {
+.caption:hover .tech-img {
     opacity: 0.3;
+}
+
+.caption:hover .tech-name {
+    background-color: var(--body-bgcolor);
+    opacity: 1;
 }
 
 .connect4 {
