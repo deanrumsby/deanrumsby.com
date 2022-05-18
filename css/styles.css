@@ -24,6 +24,7 @@ a, a:active {
     left: 0;
     width: 100%;
     background-color: #f0f0f0;
+    z-index: 1;
 }
 
 .nav-links {
