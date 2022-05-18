@@ -145,15 +145,15 @@ a, a:active {
     width: 100%;
 }
 
-.caption:hover {
+.tech-item:hover {
     cursor: default;
 }
 
-.caption:hover .tech-img {
+.tech-item:hover .tech-img {
     opacity: 0.3;
 }
 
-.caption:hover .tech-name {
+.tech-item:hover .tech-name {
     background-color: var(--body-bgcolor);
     opacity: 1;
 }
