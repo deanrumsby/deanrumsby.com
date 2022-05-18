@@ -160,7 +160,6 @@ a, a:active {
 
 .connect4 {
     grid-area: connect4;
-    object-fit: contain;
 }
 
 .projects-list {
@@ -173,18 +172,52 @@ a, a:active {
     grid-template-areas: ". connect4 .";
 }
 
+.project-item {
+    position: relative;
+}
+
+.project-item:hover .project-img {
+    opacity: 0.3;
+}
+
 .project-img {
     width: 100%;
     border-radius: 3%;
     outline: 2px solid black;
 }
 
-.project-img:hover {
-    opacity: 0.3;
-}
-
 .connect4 img {
     aspect-ratio: 1 / 1;
+}
+
+.source-link {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.2s ease;
+}
+
+.demo-link {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.2s ease;
+}
+
+.project-item:hover .source-link {
+    background-color: var(--body-bgcolor);
+    opacity: 1;
+}
+
+.project-item:hover .demo-link {
+    background-color: var(--body-bgcolor);
+    opacity: 1;
 }
 
 .contacts-list {
