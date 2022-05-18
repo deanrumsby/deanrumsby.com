@@ -49,6 +49,11 @@ a, a:active {
     transform: scale(1.1);
 }
 
+.anchor {
+    position: relative;
+    bottom: 5vh;
+}
+
 .home {
     height: 100vh;
     display: flex;
@@ -59,7 +64,7 @@ a, a:active {
 
 .main-title {
     font-size: 6vh;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .strapline {
