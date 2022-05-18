@@ -127,11 +127,11 @@ a, a:active {
     "python . git";
 }
 
-.tech-list li img{
+.tech-img{
     width: 100%;
 }
 
-.tech-list li img:hover {
+.tech-img:hover {
     opacity: 0.3;
 }
 
