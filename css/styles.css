@@ -4,6 +4,7 @@
     --main-title-size: 7vh;
     --section-title-size: 4vh;
     --text-size: 3vh;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -190,24 +191,24 @@ a, a:active {
     aspect-ratio: 1 / 1;
 }
 
-.source-link {
+.source-link,
+.demo-link {
+    border-radius: 10%;
     position: absolute;
-    left: 50%;
-    top: 30%;
     transform: translate(-50%, -50%);
     opacity: 0;
     z-index: 1;
     transition: all 0.2s ease;
 }
 
+.source-link {
+    left: 50%;
+    top: 30%;
+}
+
 .demo-link {
-    position: absolute;
     left: 50%;
     top: 70%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    z-index: 1;
-    transition: all 0.2s ease;
 }
 
 .project-item:hover .source-link {
