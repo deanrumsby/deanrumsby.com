@@ -85,9 +85,28 @@ a, a:active {
 .about-container {
     width: 80%;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 20%;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.profile,
+.technologies {
+    width: 40%;
+}
+
+@media (max-width: 1300px) {
+    .about-container {
+        
+    }
+
+    .profile {
+        width: 60%;
+    }
+    
+    .technologies {
+        width: 30%;
+    }
 }
 
 .tech-item {
