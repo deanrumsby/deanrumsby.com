@@ -1,10 +1,17 @@
 :root {
     --body-bgcolor: #0f1f42;
     --main-font-color: #ffffff;
-    --main-title-size: 7vh;
+    --main-title-size: 6vh;
     --section-title-size: 4vh;
     --text-size: 3vh;
     scroll-behavior: smooth;
+}
+
+@media (max-width: 400px) {
+    :root {
+    --main-title-size: 5vh;
+    --text-size: 2.8vh;
+    }
 }
 
 body {
@@ -65,7 +72,7 @@ a, a:active {
 }
 
 .main-title {
-    font-size: 6vh;
+    font-size: var(--main-title-size);
     margin: 0;
 }
 
@@ -83,18 +90,18 @@ a, a:active {
 }
 
 .about-container {
-    width: 70%;
+    width: 60%;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
 
 .profile {
-    width: 50%;
+    width: 500px;
 }
 
 .technologies {
-    width: 30%;
+    width: 300px;
 }
 
 .tech-item {
@@ -123,22 +130,66 @@ a, a:active {
 
 .profile {
     height: fit-content;
+    margin-right: 3em;
 }
 
 .tech-list {
-    margin: auto;
     box-sizing: border-box;
-    padding: 1em 0;
+    margin: auto;
     height: 100%;
     padding-left: 0;
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas: 
     "html . css"
     ". js ."
     "python . git";
+}
+
+@media (max-width: 1025px) {
+    .technologies {
+        width: auto;
+    }
+
+    .tech-list {
+        display: flex;
+        flex-direction: column;
+        width: 75px;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .profile {
+        width: 100%;
+        text-align: center;
+    }
+
+    .technologies {
+        width: auto;
+    }
+
+    .tech-list {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        width: auto;
+    }
+
+    .tech-img {
+        height: 100%;
+    }
+
+    .tech-item {
+        width: 100%;
+    }
 }
 
 .tech-name {
