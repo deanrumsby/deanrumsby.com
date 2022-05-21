@@ -98,12 +98,6 @@ a, a:active {
     width: 30%;
 }
 
-@media (max-width: 1600px) {
-    .profile {
-        width: 60%;
-    }
-}
-
 .tech-item {
     position: relative;
 }
@@ -161,7 +155,6 @@ a, a:active {
 }
 
 .tech-item {
-    /*outline: 1px solid white;*/
     aspect-ratio: 1 / 1;
 }
 
