@@ -76,6 +76,7 @@ a, a:active {
 .section-title {
     font-size: var(--section-title-size);
     text-align: center;
+    margin-bottom: 1.5em;
 }
 
 .about {
@@ -83,29 +84,23 @@ a, a:active {
 }
 
 .about-container {
-    width: 80%;
+    width: 70%;
     margin: auto;
     display: flex;
-
     justify-content: space-between;
 }
 
-.profile,
-.technologies {
-    width: 40%;
+.profile {
+    width: 50%;
 }
 
-@media (max-width: 1300px) {
-    .about-container {
-        
-    }
+.technologies {
+    width: 30%;
+}
 
+@media (max-width: 1600px) {
     .profile {
         width: 60%;
-    }
-    
-    .technologies {
-        width: 30%;
     }
 }
 
@@ -140,11 +135,10 @@ a, a:active {
 .tech-list {
     margin: 1em auto;
     padding-left: 0;
-    aspect-ratio: 1 / 1;
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas: 
     "html . css"
     ". js ."
@@ -163,6 +157,12 @@ a, a:active {
 
 .tech-img{
     width: 100%;
+    object-fit: contain;
+}
+
+.tech-item {
+    /*outline: 1px solid white;*/
+    aspect-ratio: 1 / 1;
 }
 
 .tech-item:hover {

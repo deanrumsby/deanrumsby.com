@@ -1,4 +1,5 @@
 const fixTechGridHeight = () => {
+  console.log('firing');
   const profile = document.querySelector('.profile');
   const techGrid = document.querySelector('.tech-list');
   const compStyles = window.getComputedStyle(profile);
@@ -6,6 +7,8 @@ const fixTechGridHeight = () => {
   techGrid.style.maxHeight = profileHeight;
 }
 
-window.addEventListener('resize', fixTechGridHeight);
+window.addEventListener('resize', () => {
+  fixTechGridHeight();
+});
 
-fixTechGridHeight();
+//fixTechGridHeight();
