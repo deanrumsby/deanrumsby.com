@@ -102,10 +102,12 @@ a, a:active {
 
 .technologies {
     width: 300px;
+    height: 100%;
 }
 
 .tech-item {
     position: relative;
+    aspect-ratio: 1 / 1;
 }
 
 .html {
@@ -135,8 +137,8 @@ a, a:active {
 
 .tech-list {
     box-sizing: border-box;
-    margin: auto;
-    height: 100%;
+    margin: 1em auto;
+    width: 300px;
     padding-left: 0;
     list-style-type: none;
     display: grid;
@@ -148,13 +150,16 @@ a, a:active {
     "python . git";
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1200px) {
     .technologies {
         width: auto;
+        height: auto;
     }
 
     .tech-list {
+        margin-top: 0;
         display: flex;
+        height: 100%;
         flex-direction: column;
         width: 75px;
         justify-content: space-around;
