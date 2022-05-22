@@ -8,10 +8,6 @@
     scroll-behavior: smooth;
 }
 
-ul {
-    padding-left: 0;
-}
-
 @media (max-width: 400px) {
     :root {
     --main-title-size: 5vh;
@@ -30,6 +26,11 @@ a, a:active {
     color: inherit;
 }
 
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
 .nav {
     position: fixed;
     height: 7vh;
@@ -40,7 +41,7 @@ a, a:active {
     z-index: 10;
 }
 
-.nav-links {
+.nav-links-list {
     display: flex;
     height: 100%;
     justify-content: space-between;
@@ -50,10 +51,9 @@ a, a:active {
 }
 
 .nav-link {
-    color: #000000;
+    color: black;
     text-align: center;
     font-size: var(--nav-text-size);
-    list-style: none;
     transition: transform 0.2s;
 }
 
@@ -61,7 +61,7 @@ a, a:active {
     transform: scale(1.1);
 }
 
-.anchor {
+.nav-scroll-anchor {
     position: relative;
     bottom: 5vh;
 }
@@ -133,7 +133,6 @@ a, a:active {
     box-sizing: border-box;
     margin: 1em auto;
     width: 300px;
-    list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -144,7 +143,7 @@ a, a:active {
 }
 
 @media (max-width: 1200px) {
-    .nav-links {
+    .nav-links-list {
         width: 500px;
     }
 
@@ -231,7 +230,6 @@ a, a:active {
     margin: auto;
     display: flex;
     width: 60%;
-    list-style-type: none;
     justify-content: space-around;
 }
 
@@ -295,7 +293,6 @@ a, a:active {
     justify-content: space-between;
     width: 500px;
     height: 12vh;
-    list-style-type: none;
 }
 
 @media (max-width: 700px) {
