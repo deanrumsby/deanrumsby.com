@@ -97,11 +97,13 @@ a, a:active {
 }
 
 .profile {
-    width: 500px;
+    min-width: 500px;
+    height: fit-content;
+    margin-right: 3em;
 }
 
 .technologies {
-    width: 300px;
+    min-width: 300px;
     height: 100%;
 }
 
@@ -131,8 +133,7 @@ a, a:active {
 }
 
 .profile {
-    height: fit-content;
-    margin-right: 3em;
+    
 }
 
 .tech-list {
@@ -151,7 +152,12 @@ a, a:active {
 }
 
 @media (max-width: 1200px) {
+    .profile {
+        min-width: 0;
+    }
+
     .technologies {
+        min-width: 0;
         width: auto;
         height: auto;
     }
