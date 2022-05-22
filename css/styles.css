@@ -215,7 +215,7 @@ ul {
     opacity: 1;
 }
 
-.connect4 {
+.project-list-item.connect4 {
     grid-area: connect4;
 }
 
@@ -240,9 +240,6 @@ ul {
     width: 100%;
     border-radius: 3%;
     outline: 2px solid black;
-}
-
-.connect4 img {
     aspect-ratio: 1 / 1;
 }
 
