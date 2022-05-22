@@ -266,7 +266,7 @@ a, a:active {
     aspect-ratio: 1 / 1;
 }
 
-.source-link,
+.code-link,
 .demo-link {
     outline: 1px solid #ffffff;
     font-size: var(--text-size);
@@ -280,7 +280,7 @@ a, a:active {
     cursor: pointer;
 }
 
-.source-link {
+.code-link {
     left: 50%;
     top: 30%;
 }
@@ -290,7 +290,7 @@ a, a:active {
     top: 60%;
 }
 
-.project-item:hover .source-link {
+.project-item:hover .code-link {
     background-color: var(--body-bgcolor);
     opacity: 1;
 }
