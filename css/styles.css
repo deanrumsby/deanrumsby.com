@@ -211,6 +211,7 @@ ul {
     }
 
     .tech-list {
+        margin-top: 1em;
         flex-direction: row;
         height: 50px;
         width: 100%;
