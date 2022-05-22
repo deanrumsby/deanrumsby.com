@@ -132,10 +132,6 @@ a, a:active {
     grid-area: git;
 }
 
-.profile {
-    
-}
-
 .tech-list {
     box-sizing: border-box;
     margin: 1em auto;
@@ -243,16 +239,17 @@ a, a:active {
 
 .projects-list {
     margin: auto;
-    display: grid;
+    display: flex;
     width: 60%;
-    grid-template-columns: 1fr 1fr 1fr;
     padding-left: 0;
     list-style-type: none;
-    grid-template-areas: ". connect4 .";
+    justify-content: space-around;
 }
 
 .project-item {
     position: relative;
+    min-width: 250px;
+    width: 30%;
 }
 
 .project-item:hover .project-img {
