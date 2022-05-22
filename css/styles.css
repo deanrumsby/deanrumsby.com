@@ -87,7 +87,7 @@ ul {
 
 .main-title {
     font-size: var(--main-title-size);
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .main-title-strapline {
