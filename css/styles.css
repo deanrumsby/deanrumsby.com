@@ -215,7 +215,7 @@ ul {
     opacity: 1;
 }
 
-.project-list-item.connect4 {
+.connect4.project-list-item {
     grid-area: connect4;
 }
 
@@ -228,8 +228,7 @@ ul {
 
 .project-list-item {
     position: relative;
-    min-width: 250px;
-    width: 30%;
+    aspect-ratio: 1 / 1;
 }
 
 .project-list-item:hover .project-img {
@@ -237,15 +236,14 @@ ul {
 }
 
 .project-img {
-    width: 100%;
+    width: 250px;
     border-radius: 3%;
     outline: 2px solid black;
-    aspect-ratio: 1 / 1;
 }
 
 .code-link,
 .demo-link {
-    outline: 1px solid #ffffff;
+    outline: 1px solid white;
     font-size: var(--text-size);
     padding: 0 0.5em;
     border-radius: 5%;
@@ -267,11 +265,7 @@ ul {
     top: 60%;
 }
 
-.project-list-item:hover .code-link {
-    background-color: var(--body-bgcolor);
-    opacity: 1;
-}
-
+.project-list-item:hover .code-link,
 .project-list-item:hover .demo-link {
     background-color: var(--body-bgcolor);
     opacity: 1;
@@ -297,11 +291,11 @@ ul {
     }
 }
 
-.contacts-list li img {
+.contact-img {
     height: 100%;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(162deg) brightness(101%) contrast(104%);
 }
 
-.contacts-list li img:hover {
+.contact-img:hover {
     opacity: 0.7;
 }
