@@ -8,6 +8,10 @@
     scroll-behavior: smooth;
 }
 
+ul {
+    padding-left: 0;
+}
+
 @media (max-width: 400px) {
     :root {
     --main-title-size: 5vh;
@@ -41,7 +45,6 @@ a, a:active {
     height: 100%;
     justify-content: space-between;
     align-items: center;
-    padding-left: 0;
     margin: auto;
     width: 700px;
 }
@@ -130,7 +133,6 @@ a, a:active {
     box-sizing: border-box;
     margin: 1em auto;
     width: 300px;
-    padding-left: 0;
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -229,7 +231,6 @@ a, a:active {
     margin: auto;
     display: flex;
     width: 60%;
-    padding-left: 0;
     list-style-type: none;
     justify-content: space-around;
 }
@@ -294,7 +295,6 @@ a, a:active {
     justify-content: space-between;
     width: 500px;
     height: 12vh;
-    padding-left: 0;
     list-style-type: none;
 }
 
