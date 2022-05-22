@@ -1,5 +1,7 @@
 :root {
     --body-bgcolor: #0f1f42;
+    --nav-bgcolor: #f0f0f0;
+    --nav-text-color: #000000;
     --main-font-color: #ffffff;
     --main-title-size: 6vh;
     --section-title-size: 4vh;
@@ -37,7 +39,7 @@ ul {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: var(--nav-bgcolor);
     z-index: 10;
 }
 
@@ -51,7 +53,7 @@ ul {
 }
 
 .nav-link {
-    color: black;
+    color: var(--nav-text-color);
     text-align: center;
     font-size: var(--nav-text-size);
     transition: transform 0.2s;
@@ -66,7 +68,7 @@ ul {
     bottom: 5vh;
 }
 
-.home {
+.home-section {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -76,10 +78,10 @@ ul {
 
 .main-title {
     font-size: var(--main-title-size);
-    margin: 0;
+    margin-bottom: 0;
 }
 
-.strapline {
+.main-title-strapline {
     font-size: var(--text-size);
 }
 
@@ -88,11 +90,11 @@ ul {
     text-align: center;
 }
 
-.about {
+.about-section {
     font-size: var(--text-size);
 }
 
-.about-container {
+.about-section-content-container {
     margin: auto;
     display: flex;
     justify-content: center;
@@ -104,7 +106,7 @@ ul {
     margin-right: 3em;
 }
 
-.tech-item {
+.tech-list-item {
     position: relative;
     aspect-ratio: 1 / 1;
 }
@@ -147,10 +149,6 @@ ul {
         width: 500px;
     }
 
-    .profile {
-        min-width: 0;
-    }
-
     .tech-list {
         margin-top: 0;
         display: flex;
@@ -162,7 +160,7 @@ ul {
 }
 
 @media (max-width: 700px) {
-    .about-container {
+    .about-section-content-container {
         width: 90%;
         flex-direction: column;
     }
@@ -173,7 +171,6 @@ ul {
     }
 
     .tech-list {
-        display: flex;
         flex-direction: row;
         height: 50px;
         width: 100%;
@@ -181,10 +178,6 @@ ul {
 
     .tech-img {
         height: 100%;
-    }
-
-    .tech-item {
-        width: 100%;
     }
 }
 
@@ -206,15 +199,15 @@ ul {
     width: 100%;
 }
 
-.tech-item:hover {
+.tech-list-item:hover {
     cursor: default;
 }
 
-.tech-item:hover .tech-img {
+.tech-list-item:hover .tech-img {
     opacity: 0.3;
 }
 
-.tech-item:hover .tech-name {
+.tech-list-item:hover .tech-name {
     background-color: var(--body-bgcolor);
     border-radius: 5%;
     font-size: var(--text-size);
