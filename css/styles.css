@@ -101,11 +101,6 @@ a, a:active {
     margin-right: 3em;
 }
 
-.technologies {
-    min-width: 300px;
-    height: 100%;
-}
-
 .tech-item {
     position: relative;
     aspect-ratio: 1 / 1;
@@ -151,12 +146,6 @@ a, a:active {
         min-width: 0;
     }
 
-    .technologies {
-        min-width: 0;
-        width: auto;
-        height: auto;
-    }
-
     .tech-list {
         margin-top: 0;
         display: flex;
@@ -178,15 +167,11 @@ a, a:active {
         text-align: center;
     }
 
-    .technologies {
-        width: auto;
-    }
-
     .tech-list {
         display: flex;
         flex-direction: row;
         height: 50px;
-        width: auto;
+        width: 100%;
     }
 
     .tech-img {
