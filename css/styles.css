@@ -90,14 +90,13 @@ a, a:active {
 }
 
 .about-container {
-    width: 60%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .profile {
-    min-width: 500px;
+    width: 500px;
     height: fit-content;
     margin-right: 3em;
 }
