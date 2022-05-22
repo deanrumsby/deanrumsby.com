@@ -43,6 +43,14 @@ ul {
     z-index: 10;
 }
 
+.hamburger-menu-label,
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0.5em;
+}
+
 .nav-links-list {
     display: flex;
     height: 100%;
@@ -160,6 +168,27 @@ ul {
 }
 
 @media (max-width: 700px) {
+    .nav {
+        background-color: transparent;
+    }
+
+    .nav-links-list {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .hamburger-menu-label {
+        font-size: 2.5em;
+        display: inline-block;
+        color: white;
+    }
+
+    .hamburger-menu:checked ~ .nav-links-list {
+        display: block;
+    }
+
+
     .about-section-content-container {
         width: 90%;
         flex-direction: column;
