@@ -100,7 +100,7 @@ ul {
     justify-content: center;
 }
 
-.profile {
+.profile-section {
     width: 500px;
     height: fit-content;
     margin-right: 3em;
@@ -111,23 +111,23 @@ ul {
     aspect-ratio: 1 / 1;
 }
 
-.html {
+.html.tech-list-item {
     grid-area: html;
 }
 
-.css {
+.css.tech-list-item {
     grid-area: css;
 }
 
-.js {
+.js.tech-list-item {
     grid-area: js;
 }
 
-.python {
+.python.tech-list-item {
     grid-area: python;
 }
 
-.git {
+.git.tech-list-item {
     grid-area: git;
 }
 
@@ -165,7 +165,7 @@ ul {
         flex-direction: column;
     }
 
-    .profile {
+    .profile-section {
         width: 100%;
         text-align: center;
     }
@@ -226,13 +226,13 @@ ul {
     justify-content: space-around;
 }
 
-.project-item {
+.project-list-item {
     position: relative;
     min-width: 250px;
     width: 30%;
 }
 
-.project-item:hover .project-img {
+.project-list-item:hover .project-img {
     opacity: 0.3;
 }
 
@@ -270,12 +270,12 @@ ul {
     top: 60%;
 }
 
-.project-item:hover .code-link {
+.project-list-item:hover .code-link {
     background-color: var(--body-bgcolor);
     opacity: 1;
 }
 
-.project-item:hover .demo-link {
+.project-list-item:hover .demo-link {
     background-color: var(--body-bgcolor);
     opacity: 1;
 }
