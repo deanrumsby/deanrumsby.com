@@ -1,7 +1,4 @@
 // Background animation
-const canvas = document.querySelector('#background-animation');
-const homeSection = document.querySelector('.home-section');
-
 function setCanvasDimensions(canvas, element) {
   const compStyles = window.getComputedStyle(element);
   elementWidth = compStyles.getPropertyValue('width');
@@ -11,10 +8,12 @@ function setCanvasDimensions(canvas, element) {
   canvas.setAttribute('height', elementHeight);
 }
 
+const canvas = document.querySelector('#background-animation');
+const homeSection = document.querySelector('.home-section');
 setCanvasDimensions(canvas, homeSection);
 
 const backgroundAnimation = new BackgroundAnimation(canvas);
-backgroundAnimation.createShapes(5);
+backgroundAnimation.createShapes(10);
 backgroundAnimation.animate();
 
 window.addEventListener('resize', () => {
