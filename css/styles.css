@@ -266,6 +266,10 @@ ul {
     opacity: 1;
 }
 
+.projects-section {
+    margin-top: 2.5em;
+}
+
 .connect4.project-list-item {
     grid-area: connect4;
 }
@@ -325,6 +329,10 @@ ul {
 .project-list-item:hover .demo-link {
     background-color: var(--body-bgcolor);
     opacity: 1;
+}
+
+.contact-section {
+    margin-top: 2.5em;
 }
 
 .contacts-list {
