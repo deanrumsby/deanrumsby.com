@@ -316,6 +316,11 @@ ul {
     top: 60%;
 }
 
+.code-link:hover,
+.demo-link:hover {
+    font-weight: 500;
+}
+
 .project-list-item:hover .code-link,
 .project-list-item:hover .demo-link {
     background-color: var(--body-bgcolor);
