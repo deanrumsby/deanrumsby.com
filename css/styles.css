@@ -85,6 +85,14 @@ ul {
     align-items: center;
 }
 
+.canvas {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid white;
+}
+
 .main-title {
     font-size: var(--main-title-size);
     margin: 0;
