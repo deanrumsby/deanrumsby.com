@@ -7,6 +7,7 @@ class Shape {
     this.maxSpeed = 1;
     this.speedX = this.randSpeed(this.maxSpeed);
     this.speedY = this.randSpeed(this.maxSpeed);
+    this.lineColor = 'rgba(255, 255, 255, 1)';
   }
 
   update() {

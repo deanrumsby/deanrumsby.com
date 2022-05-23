@@ -4,8 +4,6 @@ class BackgroundAnimation {
     this.context = canvas.getContext('2d');
     this.shapes = [];
     this.lineThickness = 1;
-    this.lineOpacity = '1';
-    this.lineColor = `rgba(255, 255, 255, ${this.lineOpacity})`;
   }
 
   randSpawnCoords() {
@@ -56,7 +54,14 @@ class BackgroundAnimation {
         this.shapes.splice(i, 1);
         this.shapes.push(this.newRandomShape());
       }
-      shape.draw(this.lineColor, this.lineThickness);
+    const fadeBoundary = canvas.height - 200;
+    if (shape.y > fadeBoundary) {
+      const distIntoFade = (shape.y - this.canvas.height) + 100;
+      const opacityChange = distIntoFade / 100;
+      const newOpacity = 1 - opacityChange;
+      shape.lineColor = `rgba(255, 255, 255, ${newOpacity})`;
+    }
+      shape.draw(shape.lineColor, this.lineThickness);
     }
   }
 
