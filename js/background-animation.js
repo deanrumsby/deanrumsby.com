@@ -54,9 +54,9 @@ class BackgroundAnimation {
         this.shapes.splice(i, 1);
         this.shapes.push(this.newRandomShape());
       }
-    const fadeBoundary = canvas.height - 200;
+    const fadeBoundary = canvas.height - 250;
     if (shape.y > fadeBoundary) {
-      const distIntoFade = (shape.y - this.canvas.height) + 100;
+      const distIntoFade = (shape.y - this.canvas.height) + 150;
       const opacityChange = distIntoFade / 100;
       const newOpacity = 1 - opacityChange;
       shape.lineColor = `rgba(255, 255, 255, ${newOpacity})`;

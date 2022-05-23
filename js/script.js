@@ -13,7 +13,7 @@ const homeSection = document.querySelector('.home-section');
 setCanvasDimensions(canvas, homeSection);
 
 const backgroundAnimation = new BackgroundAnimation(canvas);
-backgroundAnimation.createShapes(10);
+backgroundAnimation.createShapes(12);
 backgroundAnimation.animate();
 
 window.addEventListener('resize', () => {
