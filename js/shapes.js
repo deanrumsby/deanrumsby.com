@@ -24,7 +24,7 @@ class Shape {
   }
 
   isOffScreen() {
-    const offset = 100
+    const offset = 55;
     return (this.x < -offset
       || this.x > canvas.width + offset
       || this.y < -offset
