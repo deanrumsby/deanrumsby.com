@@ -19,7 +19,7 @@
 
 body {
     font-family: 'Roboto Mono', monospace;
-    font-weight: 100;
+    font-weight: 300;
     background-color: var(--body-bgcolor);
     color: var(--main-font-color);
 }
@@ -66,13 +66,13 @@ ul {
     color: var(--nav-text-color);
     text-align: center;
     font-size: var(--nav-text-size);
-    font-weight: 300;
+    font-weight: 400;
     transition: transform 0.2s;
 }
 
 .nav-link:hover {
     transform: scale(1.1);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .nav-scroll-anchor {
@@ -95,7 +95,7 @@ ul {
 
 .main-title {
     font-size: var(--main-title-size);
-    font-weight: 300;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -105,7 +105,7 @@ ul {
 
 .section-title {
     font-size: var(--section-title-size);
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
 }
 
