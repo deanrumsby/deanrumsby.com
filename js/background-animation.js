@@ -3,6 +3,9 @@ class BackgroundAnimation {
     this.canvas = canvas;
     this.context = canvas.getContext('2d');
     this.shapes = [];
+    this.lineThickness = 1;
+    this.lineOpacity = '1';
+    this.lineColor = `rgba(255, 255, 255, ${this.lineOpacity})`;
   }
 
   randCoord(min, max) {
@@ -34,7 +37,7 @@ class BackgroundAnimation {
         this.shapes.splice(i, 1);
         this.shapes.push(this.newRandomShape());
       }
-      shape.draw('white', 2);
+      shape.draw(this.lineColor, this.lineThickness);
     }
   }
 
@@ -44,8 +47,3 @@ class BackgroundAnimation {
     requestAnimationFrame(this.animate);
   }
 }
-
-// window.addEventListener('resize', () => {
-//   canvas.width = '100%';
-//   canvas.height = '100%';
-// });
