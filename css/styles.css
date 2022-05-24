@@ -56,7 +56,7 @@ p {
     align-items: center;
     margin: auto;
     padding: 0.7em 0;
-    width: 600px;
+    width: 37.5rem;
 }
 
 .nav-link {
@@ -116,7 +116,7 @@ p {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    width: 700px;
+    width: 43.75rem;
 }
 
 .profile-section {
@@ -152,7 +152,7 @@ p {
 .tech-list {
     box-sizing: border-box;
     margin: 0;
-    width: 270px;
+    width: 16.875rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -221,7 +221,7 @@ p {
 }
 
 .project-img {
-    width: 250px;
+    width: 15.625rem;
     border-radius: 3%;
     outline: 2px solid black;
 }
@@ -269,8 +269,8 @@ p {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    max-width: 500px;
-    height: 10vh;
+    max-width: 31.25rem;
+    height: 4rem;
 }
 
 .contact-img {
@@ -328,7 +328,7 @@ p {
         margin-top: 1em;
         display: flex;
         flex-direction: row;
-        height: 50px;
+        height: 3.125rem;
         width: 100%;
         justify-content: space-around;
     }
@@ -338,6 +338,7 @@ p {
     }
 
     .contacts-list {
-        max-width: 330px;
+        max-width: 20.625rem;
+        padding: 0 1em;
     }
 }
