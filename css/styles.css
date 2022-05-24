@@ -3,19 +3,19 @@
     --nav-bgcolor: #f0f0f0;
     --nav-text-color: #000000;
     --main-font-color: #ffffff;
-    --main-title-size: 6vh;
-    --section-title-size: 4vh;
-    --text-size: 3vh;
-    --nav-text-size: 2.5vh;
+    --main-title-size: 2.6rem;
+    --section-title-size: 1.8rem;
+    --text-size: 1.3rem;
+    --nav-text-size: 1.1rem;
     scroll-behavior: smooth;
 }
 
-@media (max-width: 400px) {
+/*@media (max-width: 400px) {
     :root {
     --main-title-size: 5vh;
     --text-size: 2.8vh;
     }
-}
+}*/
 
 body {
     font-family: 'Roboto Mono', monospace;
@@ -32,6 +32,10 @@ a, a:active {
 ul {
     padding-left: 0;
     list-style: none;
+}
+
+p {
+    margin-top: 0;
 }
 
 .nav {
@@ -152,7 +156,7 @@ ul {
 
 .tech-list {
     box-sizing: border-box;
-    margin-top: 1em;
+    margin: 0;
     width: 270px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -327,7 +331,7 @@ ul {
     display: flex;
     justify-content: space-between;
     width: 500px;
-    height: 12vh;
+    height: 10vh;
 }
 
 @media (max-width: 700px) {
