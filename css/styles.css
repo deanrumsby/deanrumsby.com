@@ -10,13 +10,6 @@
     scroll-behavior: smooth;
 }
 
-/*@media (max-width: 400px) {
-    :root {
-    --main-title-size: 5vh;
-    --text-size: 2.8vh;
-    }
-}*/
-
 body {
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
@@ -101,10 +94,12 @@ p {
     font-size: var(--main-title-size);
     font-weight: 500;
     margin: 0;
+    text-align: center;
 }
 
 .main-title-strapline {
     font-size: var(--text-size);
+    text-align: center;
 }
 
 .section-title {
@@ -165,62 +160,6 @@ p {
     "html . css"
     ". js ."
     "python . git";
-}
-
-@media (max-width: 700px) {
-    .nav {
-        background-color: transparent;
-    }
-
-    .nav-links-list {
-        flex-direction: column;
-        background-color: var(--body-bgcolor);
-        justify-content: space-evenly;
-        width: 100%;
-        position: absolute;
-        height: 100vh;
-        z-index: 2;
-        transform: translate(100%);
-        transition: transform 0.4s ease-in-out;
-    }
-
-    .nav-link {
-        color: white;
-        font-size: 2em;
-    }
-
-    .hamburger-menu-label {
-        font-size: 2.5em;
-        display: inline-block;
-        color: white;
-    }
-
-    .hamburger-menu:checked ~ .nav-links-list {
-        transform: translate(0);
-    }
-
-    .about-section-content-container {
-        width: 90%;
-        flex-direction: column;
-    }
-
-    .profile-section {
-        width: 100%;
-        text-align: center;
-    }
-
-    .tech-list {
-        margin-top: 1em;
-        display: flex;
-        flex-direction: row;
-        height: 50px;
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    .tech-img {
-        height: 100%;
-    }
 }
 
 .tech-name {
@@ -330,20 +269,8 @@ p {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    width: 500px;
+    max-width: 500px;
     height: 10vh;
-}
-
-@media (max-width: 700px) {
-    .contacts-list {
-        width: 80%;
-    }
-}
-
-@media (max-width: 300px) {
-    .contacts-list {
-        width: 100%;
-    }
 }
 
 .contact-img {
@@ -353,4 +280,64 @@ p {
 
 .contact-img:hover {
     opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        background-color: transparent;
+    }
+
+    .nav-links-list {
+        flex-direction: column;
+        background-color: var(--body-bgcolor);
+        justify-content: space-evenly;
+        width: 100%;
+        position: absolute;
+        height: 100vh;
+        z-index: 2;
+        transform: translate(100%);
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .nav-link {
+        color: white;
+        font-size: 2em;
+    }
+
+    .hamburger-menu-label {
+        font-size: 2.5em;
+        display: inline-block;
+        color: white;
+    }
+
+    .hamburger-menu:checked ~ .nav-links-list {
+        transform: translate(0);
+    }
+
+    .about-section-content-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .profile-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tech-list {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .tech-img {
+        height: 100%;
+    }
+
+    .contacts-list {
+        max-width: 330px;
+    }
 }
