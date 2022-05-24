@@ -224,6 +224,7 @@ p {
     width: 15.625rem;
     border-radius: 3%;
     outline: 2px solid black;
+    transition: opacity 0.2s;
 }
 
 .code-link,
@@ -236,7 +237,7 @@ p {
     transform: translate(-50%, -50%);
     opacity: 0;
     z-index: 1;
-    transition: all 0.2s ease;
+    transition: opacity 0.2s;
     cursor: pointer;
 }
 
@@ -253,6 +254,7 @@ p {
 .code-link:hover,
 .demo-link:hover {
     font-weight: 500;
+    outline: 2px solid white;
 }
 
 .project-list-item:hover .code-link,
