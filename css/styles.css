@@ -59,7 +59,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    width: 700px;
+    width: 600px;
 }
 
 .nav-link {
@@ -116,13 +116,13 @@ ul {
 .about-section-content-container {
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 700px;
 }
 
 .profile-section {
-    width: 500px;
+    width: 400px;
     height: fit-content;
-    margin-right: 3em;
 }
 
 .tech-list-item {
@@ -152,8 +152,8 @@ ul {
 
 .tech-list {
     box-sizing: border-box;
-    margin: 1em auto;
-    width: 300px;
+    margin-top: 1em;
+    width: 270px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -161,21 +161,6 @@ ul {
     "html . css"
     ". js ."
     "python . git";
-}
-
-@media (max-width: 1200px) {
-    .nav-links-list {
-        width: 500px;
-    }
-
-    .tech-list {
-        margin-top: 0;
-        display: flex;
-        height: 100%;
-        flex-direction: column;
-        width: 75px;
-        justify-content: space-around;
-    }
 }
 
 @media (max-width: 700px) {
@@ -222,9 +207,11 @@ ul {
 
     .tech-list {
         margin-top: 1em;
+        display: flex;
         flex-direction: row;
         height: 50px;
         width: 100%;
+        justify-content: space-around;
     }
 
     .tech-img {
