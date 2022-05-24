@@ -1,6 +1,6 @@
 :root {
     --body-bgcolor: #0f1f42;
-    --nav-bgcolor: #f0f0f0;
+    --nav-bgcolor: #ffffff;
     --nav-text-color: #000000;
     --main-font-color: #ffffff;
     --main-title-size: 2.6rem;
@@ -33,7 +33,6 @@ p {
 
 .nav {
     position: fixed;
-    height: 7vh;
     top: 0;
     left: 0;
     width: 100%;
@@ -56,6 +55,7 @@ p {
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    padding: 0.7em 0;
     width: 600px;
 }
 
