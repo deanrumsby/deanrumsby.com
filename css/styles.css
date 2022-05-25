@@ -275,6 +275,11 @@ p {
     height: 4rem;
 }
 
+.contact-list-item {
+    min-width: 0;
+    text-align: center;
+}
+
 .contact-img {
     height: 100%;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(162deg) brightness(101%) contrast(104%);
