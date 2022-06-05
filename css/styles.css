@@ -7,6 +7,7 @@
     --section-title-size: 1.8rem;
     --text-size: 1.3rem;
     --nav-text-size: 1.1rem;
+    --hamburger-icon-size: 2.5rem;
     scroll-behavior: smooth;
 }
 
@@ -290,6 +291,11 @@ p {
 }
 
 @media (max-width: 48em) {
+    :root {
+        --nav-text-size: 2rem;
+        --nav-text-color: #ffffff;
+    }
+
     .nav {
         background-color: transparent;
     }
@@ -306,15 +312,10 @@ p {
         transition: transform 0.4s ease-in-out;
     }
 
-    .nav-link {
-        color: white;
-        font-size: 2em;
-    }
-
     .hamburger-menu-label {
-        font-size: 2.5em;
+        font-size: var(--hamburger-icon-size);
         display: inline-block;
-        color: white;
+        color: var(--nav-text-color);
     }
 
     .hamburger-menu:checked ~ .nav-links-list {
